@@ -57,29 +57,15 @@ There are *3 kinds of code assets*:
 |===
 
 === Folder Structure
-- `/Assets`
-** `/Code`
-*** `/FowlFever`
-+
---
+- `Assets/Code/`
+** `FowlFever/`
 [horizontal]
-`/Editor`:: -> {asmdef-e}
-`/Runtime`:: -> {asmdef-r}
-`/Standalone`:: -> {asmdef-s}
---
-*** `/Tests`
-+
---
-[opts=autowidth,grid=none,frame=none]
-|===
-|`/Editor` |{asmdef-t-e}
-|`/Runtime` |{asmdef-t-r}
-|`/Standalone` |{asmdef-t-s}
-|===
-
+`Editor/`:: {asmdef-e}
+`Runtime/`:: {asmdef-r}
+`Standalone/`:: {asmdef-s}
+** `/Tests`
 [horizontal]
-`Editor/`:: -> {asmdef-t-e}
-`Runtime/`:: -> {asmdef-t-r}
-`Standalone/`:: -> {asmdef-t-s}
---
+`Editor/`:: {asmdef-t-e}
+`Runtime/`:: {asmdef-t-r}
+`Standalone/`:: {asmdef-t-s}
 

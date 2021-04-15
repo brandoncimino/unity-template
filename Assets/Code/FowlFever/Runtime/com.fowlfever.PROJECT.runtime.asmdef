@@ -1,0 +1,16 @@
+{
+    "name": "com.fowlfever.PROJECT.runtime",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e78a5524f475ae4478fcd21cde244b67"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

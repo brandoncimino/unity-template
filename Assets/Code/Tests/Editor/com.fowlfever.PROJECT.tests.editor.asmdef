@@ -1,0 +1,20 @@
+{
+    "name": "com.fowlfever.PROJECT.tests.editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5cc5248fdba4d0143857eb98515c5757",
+        "GUID:bcfe5347812438b419c670af6d28df9d",
+        "GUID:e78a5524f475ae4478fcd21cde244b67"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
