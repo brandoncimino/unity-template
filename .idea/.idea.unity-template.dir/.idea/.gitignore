@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.unity-template.iml
+/contentModel.xml
+# Datasource local storage ignored files
+/../../../../../../../../:\Users\Brandon Cimino\Desktop\unity-template\.idea\.idea.unity-template.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
