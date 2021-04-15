@@ -63,7 +63,7 @@ There are *3 kinds of code assets*:
 `Editor/`:: {asmdef-e}
 `Runtime/`:: {asmdef-r}
 `Standalone/`:: {asmdef-s}
-** `/Tests`
+** `Tests/`
 [horizontal]
 `Editor/`:: {asmdef-t-e}
 `Runtime/`:: {asmdef-t-r}
