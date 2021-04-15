@@ -1,0 +1,85 @@
+﻿= Brandon's Unity Template
+:icons: font
+:asmdef-prefix: com.fowlfever.PROJECT
+:asmdef-e: pass:n[`{asmdef-prefix}.editor`]
+:asmdef-r: pass:n[`{asmdef-prefix}.runtime`]
+:asmdef-s: pass:n[`{asmdef-prefix}.standalone`]
+:asmdef-t-e: pass:n[`{asmdef-prefix}.tests.editor`]
+:asmdef-t-r: pass:n[`{asmdef-prefix}.tests.runtime`]
+:asmdef-t-s: pass:n[`{asmdef-prefix}.tests.standalone`]
+
+== Folder Structure
+_or, "Where do I put this crap?"_
+
+.References
+[sidebar]
+--
+- https://forum.unity.com/threads/mature-project-folder-structure.654694/
+- https://docs.unity3d.com/Manual/cus-asmdef.html
+- https://docs.unity3d.com/Manual/cus-layout.html
+--
+
+[WARNING]
+--
+There are 3 different places where code is organized:
+
+- Assembly definitions
+- Folders
+- Namespaces
+
+We know that folders are supposed to match namespaces, but _what about the assembly definitions?_
+
+Should they include this `com.` prefix nonsense?
+--
+
+There are *3 kinds of code assets*:
+
+"Runtime" code::
+- Any code with a dependency on `UnityEngine`
+- In this context, "runtime" is synonymous with "play mode"
+"Editor" code::
+- Any code that *requires* a dependency on `UnityEditor`
+"Standalone" code::
+- Any code that has *no Unity dependencies* - i.e. `No Engine References` is checked off
+
+|===
+| |Standalone |Runtime |Editor
+
+|`FowlFever`
+|{asmdef-s}
+|{asmdef-r}
+|{asmdef-e}
+
+|`Tests`
+|{asmdef-t-s}
+|{asmdef-t-r}
+|{asmdef-t-e}
+|===
+
+=== Folder Structure
+- `/Assets`
+** `/Code`
+*** `/FowlFever`
++
+--
+[horizontal]
+`/Editor`:: -> {asmdef-e}
+`/Runtime`:: -> {asmdef-r}
+`/Standalone`:: -> {asmdef-s}
+--
+*** `/Tests`
++
+--
+[opts=autowidth,grid=none,frame=none]
+|===
+|`/Editor` |{asmdef-t-e}
+|`/Runtime` |{asmdef-t-r}
+|`/Standalone` |{asmdef-t-s}
+|===
+
+[horizontal]
+`Editor/`:: -> {asmdef-t-e}
+`Runtime/`:: -> {asmdef-t-r}
+`Standalone/`:: -> {asmdef-t-s}
+--
+
