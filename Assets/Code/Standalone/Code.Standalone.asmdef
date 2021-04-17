@@ -1,15 +1,13 @@
 {
-    "name": "com.fowlfever.PROJECT.tests.library",
+    "name": "Code.Standalone",
     "rootNamespace": "",
-    "references": [
-        "com.fowlfever.PROJECT.standalone"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
     "precompiledReferences": [
-        "nunit.framework.dll"
+        "Newtonsoft.Json.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

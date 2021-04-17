@@ -1,14 +1,19 @@
 {
-    "name": "com.fowlfever.PROJECT.runtime",
+    "name": "Code.Editor",
     "rootNamespace": "",
     "references": [
+        "GUID:bcfe5347812438b419c670af6d28df9d",
         "GUID:e78a5524f475ae4478fcd21cde244b67"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Newtonsoft.Json.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],

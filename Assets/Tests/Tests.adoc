@@ -1,0 +1,11 @@
+﻿[#_tests]
+= link:{docdir}[Tests]
+
+> Contains all of the Unity unit tests.
+
+Each directory corresponds to one of the types of {rider-testing}[unit test runners] supported by https://www.jetbrains.com/rider/[JetBrains Rider].
+
+:leveloffset: 1
+include::Editor/Editor.adoc[]
+include::Runtime/Runtime.adoc[]
+include::Standalone/Standalone.adoc[]

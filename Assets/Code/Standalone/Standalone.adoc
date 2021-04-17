@@ -1,0 +1,15 @@
+﻿[#_code-standalone]
+= link:{docdir}[Standalone]
+
+> Code that *does not touch Unity*.
+
+- This directory's `.asmdef` should contain:
++
+[source,json]
+----
+  "noEngineReferences": true
+----
++
+- Code in this directory *cannot* reference `UnityEngine` *or* `UnityEditor`.
+- Code in this directory *can* reference *Packages*, such as https://github.com/brandoncimino/brandon-utils[`brandon-utils`] or https://github.com/jilleJr/Newtonsoft.Json-for-Unity[`Newtonsoft.Json for Unity`].
+- Code in this package should be tested using <<_tests-standalone, /Tests/Standalone>>.

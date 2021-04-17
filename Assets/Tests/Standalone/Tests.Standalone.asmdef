@@ -1,19 +1,19 @@
 {
-    "name": "com.fowlfever.PROJECT.editor",
+    "name": "Tests.Standalone",
     "rootNamespace": "",
     "references": [
-        "GUID:bcfe5347812438b419c670af6d28df9d",
         "GUID:e78a5524f475ae4478fcd21cde244b67"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "Newtonsoft.Json.dll"
+    ],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
-    "noEngineReferences": false
+    "noEngineReferences": true
 }

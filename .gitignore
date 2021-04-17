@@ -129,3 +129,9 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
+
+# ================
+# == Fowl Fever ==
+# ================
+#This folder contains anything you're messing around with but don't want to check in
+#Assets/Sketchbook/
