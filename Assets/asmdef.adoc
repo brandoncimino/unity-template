@@ -1,4 +1,9 @@
 ﻿= `.asmdef` files
+:tip-caption: 📎
+:note-caption: 📰
+:warning-caption: ⚠
+:caution-caption: 🔥
+:important-caption: ‼
 
 > or, "Assembly Definitions"
 

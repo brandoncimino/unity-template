@@ -1,11 +1,9 @@
 ﻿= Brandon's Unity Template
-:asmdef-prefix: com.fowlfever.PROJECT
-:asmdef-e: pass:n[`{asmdef-prefix}.editor`]
-:asmdef-r: pass:n[`{asmdef-prefix}.runtime`]
-:asmdef-s: pass:n[`{asmdef-prefix}.standalone`]
-:asmdef-t-e: pass:n[`{asmdef-prefix}.tests.editor`]
-:asmdef-t-r: pass:n[`{asmdef-prefix}.tests.runtime`]
-:asmdef-t-s: pass:n[`{asmdef-prefix}.tests.standalone`]
+:tip-caption: 📎
+:note-caption: 📰
+:warning-caption: ⚠
+:caution-caption: 🔥
+:important-caption: ‼
 
 == Project Structure
 > or, "Where do I put this crap?"

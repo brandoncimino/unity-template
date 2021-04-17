@@ -1,5 +1,10 @@
 ﻿[#_code-runtime]
 = link:{docdir}[/Code/Runtime]
+:tip-caption: 📎
+:note-caption: 📰
+:warning-caption: ⚠
+:caution-caption: 🔥
+:important-caption: ‼
 
 > aka "Play Mode."
 
