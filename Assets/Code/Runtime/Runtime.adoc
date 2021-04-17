@@ -1,5 +1,5 @@
 ﻿[#_code-runtime]
-= link:{docdir}[Runtime]
+= link:{docdir}[/Code/Runtime]
 
 > aka "Play Mode."
 

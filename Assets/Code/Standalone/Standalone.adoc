@@ -1,5 +1,5 @@
 ﻿[#_code-standalone]
-= link:{docdir}[Standalone]
+= link:{docdir}[/Code/Standalone]
 
 > Code that *does not touch Unity*.
 

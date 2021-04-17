@@ -1,5 +1,5 @@
 ﻿[#_code-editor]
-= link:{docdir}[Editor]
+= link:{docdir}[/Code/Editor]
 
 > Editor extensions, custom inspectors, etc.
 

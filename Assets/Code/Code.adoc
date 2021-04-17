@@ -3,5 +3,7 @@
 
 :leveloffset: 1
 include::Editor/Editor.adoc[]
+
 include::Runtime/Runtime.adoc[]
+
 include::Standalone/Standalone.adoc[]

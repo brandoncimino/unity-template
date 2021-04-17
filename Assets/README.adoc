@@ -7,65 +7,24 @@
 :asmdef-t-r: pass:n[`{asmdef-prefix}.tests.runtime`]
 :asmdef-t-s: pass:n[`{asmdef-prefix}.tests.standalone`]
 
-== `.asmdef` files
-.What is the "root namespace" value?
-[sidebar]
---
-Namespaces, by default, should correspond to the *path to the file*, with *each segment corresponding to a folder*.
+== Project Structure
+> or, "Where do I put this crap?"
 
-This path is *relative to `Assets/`*
-
-For example:
-----
-Assets/Code/Enemies/Slime.cs
-----
-Should have the namespace:
-[source,c#]
-----
-namespace Code.Enemies {
-    public class Slime { }
-}
-----
-
-[NOTE]
+.*TL;DR:* Decision-making process
+[caption=""]
 ====
-Folders (and therefore namespaces) should be *uppercase* - this is the way it is done in actual `C#` source code. For example:
+[qanda]
+Does this code import `Unity**Editor**`?::
+-> link:Code/Editor/[]
 
-    using System.Security.Cryptography;
+Does this code import `Unity**Engine**`?::
+-> link:Code/Runtime/[]
+
+Everything else::
+-> link:Code/Standalone/[]
 ====
 
-.Example Namespaces
-[cols="m,m"]
-|===
-|Path |Namespace
-
-|Assets/Code/Enemies/Slime.cs
-|Code.Enemies
-
-|Assets/Code/Testing/Enemies/Slime.cs
-|Code.Testing.Enemies
-|===
-
-When the *"Root Namespace"* value is set on an `.asmdef` file, it *prepends* that value to the *entire namespace*.
-
-.With the "Root Namespace" `butts`
-[cols="m,m,m"]
-|===
-|Root Namespace |Path |Namespace
-
-.2+|butts
-|Assets/Code/Enemies/Slime.cs
-|butts.Code.Enemies
-
-|Assets/Code/Testing/Enemies/Slime.cs
-|butts.Code.Testing.Enemies
-|===
---
-
-== Folder Structure
-_or, "Where do I put this crap?"_
-
-.References
+.References / Inspirations
 [sidebar]
 --
 - https://forum.unity.com/threads/mature-project-folder-structure.654694/
@@ -81,37 +40,40 @@ There are 3 different places where code is organized:
 - Folders
 - Namespaces
 
-We know that folders are supposed to match namespaces, but _what about the assembly definitions?_
+These three levels of organization *should match each other*.
 
-Should they include this `com.` prefix nonsense?
+For example:
+
+[cols="m,m,m"]
+|===
+|Path |Namespace |`.asmdef`
+
+|Assets/Code/Runtime/Enemies/Slime.cs
+|Code.Runtime.Enemies
+|Code.Runtime.asmdef{wj}footnote:[The `.asmdef` file lives in the `Assets/Code/Runtime` folder, so the name does _not_ include `.Enemies`.]
+|===
 --
 
 There are *3 kinds of code assets*:
 
-"Runtime" code::
+link:Code/Runtime/["Runtime"]::
 - Any code with a dependency on `UnityEngine`
 - In this context, "runtime" is synonymous with "play mode"
-"Editor" code::
+link:Code/Editor/["Editor"]::
 - Any code that *requires* a dependency on `UnityEditor`
-"Standalone" code::
+link:Code/Editor/["Standalone"]::
 - Any code that has *no Unity dependencies* - i.e. `No Engine References` is checked off
 
-|===
-| |Standalone |Runtime |Editor
 
-|`FowlFever`
-|{asmdef-s}
-|{asmdef-r}
-|{asmdef-e}
 
-|`Tests`
-|{asmdef-t-s}
-|{asmdef-t-r}
-|{asmdef-t-e}
-|===
+== Folders
 
-== Project Structure
+NOTE: https://github.com/github/markup/issues/1095[Github does not support the `include::[\]` macro.] This makes me sad.
 
-include::Code/Code.adoc[leveloffset=2]
-include::Tests/Tests.adoc[leveloffset=2]
-include::Sketchbook/Sketchbook.adoc[leveloffset=2]
+
+:leveloffset: 2
+include::Code/Code.adoc[]
+
+include::Tests/Tests.adoc[]
+
+include::Sketchbook/Sketchbook.adoc[]

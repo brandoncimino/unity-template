@@ -1,0 +1,57 @@
+﻿= `.asmdef` files
+
+> or, "Assembly Definitions"
+
+.What is the "root namespace" value?
+[sidebar]
+--
+Namespaces, by default, should correspond to the *path to the file*, with *each segment corresponding to a folder*.
+
+NOTE: This path is *relative to `Assets/`*.
+
+For example:
+----
+Assets/Code/Enemies/Slime.cs
+----
+Should have the namespace:
+[source,c#]
+----
+namespace Code.Enemies {
+    public class Slime { }
+}
+----
+
+[NOTE]
+====
+Folders (and therefore namespaces) should be *uppercase* - this is the way it is done in actual `C#` source code. For example:
+
+    using System.Security.Cryptography;
+====
+
+.Example Namespaces
+[cols="m,m"]
+|===
+|Path |Namespace
+
+|Assets/Code/Enemies/Slime.cs
+|Code.Enemies
+
+|Assets/Code/Testing/Enemies/Slime.cs
+|Code.Testing.Enemies
+|===
+
+When the *"Root Namespace"* value is set on an `.asmdef` file, it *prepends* that value to the *entire namespace*.
+
+.With the "Root Namespace" `butts`
+[cols="m,m,m"]
+|===
+|Root Namespace |Path |Namespace
+
+.2+|butts
+|Assets/Code/Enemies/Slime.cs
+|butts.Code.Enemies
+
+|Assets/Code/Testing/Enemies/Slime.cs
+|butts.Code.Testing.Enemies
+|===
+--
