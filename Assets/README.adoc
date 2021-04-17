@@ -9,6 +9,7 @@
 :important-caption: ‼
 :sectnums:
 :toc:
+:rider-testing: https://www.jetbrains.com/help/rider/Running_and_Debugging_Unity_Tests.html
 
 == Project Structure
 > or, "Where do I put this crap?"
