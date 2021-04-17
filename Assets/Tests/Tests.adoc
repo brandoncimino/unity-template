@@ -7,5 +7,7 @@ Each directory corresponds to one of the types of {rider-testing}[unit test runn
 
 :leveloffset: 1
 include::Editor/Editor.adoc[]
+
 include::Runtime/Runtime.adoc[]
+
 include::Standalone/Standalone.adoc[]
