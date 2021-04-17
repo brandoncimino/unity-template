@@ -133,5 +133,8 @@ fabric.properties
 # ================
 # == Fowl Fever ==
 # ================
-#This folder contains anything you're messing around with but don't want to check in
-#Assets/Sketchbook/
+# This folder contains anything you're messing around with but don't want to check in
+# We then un-ignore the documentation .adoc file (and it's .meta file - not that we need it, but this way it doesn't keep getting re-generated)
+Assets/Sketchbook/
+!Assets/Sketchbook/Sketchbook.adoc
+!Assets/Sketchbook/Sketchbook.adoc.meta
