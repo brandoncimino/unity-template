@@ -6,8 +6,20 @@
 Each directory corresponds to one of the types of {rider-testing}[unit test runners] supported by https://www.jetbrains.com/rider/[JetBrains Rider].
 
 :leveloffset: 1
-include::Editor/Editor.adoc[]
+[#_tests-editor]
+= link:{docdir}[/Tests/Editor]
 
-include::Runtime/Runtime.adoc[]
+> {rider-testing}[*Edit Mode*] tests that target <<_code-editor, */Code/Editor*>>.
 
-include::Standalone/Standalone.adoc[]
+
+[#_tests-runtime]
+= link:{docdir}[/Tests/Runtime]
+
+> {rider-testing}[*Play Mode*] tests that target <<_code-runtime, */Code/Runtime*>>.
+
+
+[#_tests-standalone]
+= link:{docfile}[/Tests/Standalone]
+
+> {rider-testing}[*NUnit Standalone*] tests that target <<_code-standalone, */Code/Standalone*>>.
+

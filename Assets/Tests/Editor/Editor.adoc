@@ -1,4 +1,0 @@
-﻿[#_tests-editor]
-= link:{docdir}[/Tests/Editor]
-
-> {rider-testing}[*Edit Mode*] tests that target <<_code-editor, */Code/Editor*>>.

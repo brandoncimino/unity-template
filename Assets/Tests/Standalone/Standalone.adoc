@@ -1,4 +1,0 @@
-﻿[#_tests-standalone]
-= link:{docfile}[/Tests/Standalone]
-
-> {rider-testing}[*NUnit Standalone*] tests that target <<_code-standalone, */Code/Standalone*>>.

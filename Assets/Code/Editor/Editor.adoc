@@ -1,7 +1,0 @@
-﻿[#_code-editor]
-= link:{docdir}[/Code/Editor]
-
-> Editor extensions, custom inspectors, etc.
-
-- This code relies on *both* `UnityEditor` _and_ `UnityEngine`.
-- Tested by <<_tests-editor, /Tests/Editor>>.
