@@ -7,7 +7,7 @@
 +
 [source,json]
 ----
-  "noEngineReferences": true
+"noEngineReferences": true
 ----
 +
 - Code in this directory *cannot* reference `UnityEngine` *or* `UnityEditor`.
