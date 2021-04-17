@@ -1,4 +1,7 @@
 ﻿= Brandon's Unity Template
+// These are unicode emojis,
+// which are used instead of FontAwesome icons for admonitions.
+// See: https://docs.asciidoctor.org/asciidoc/latest/blocks/admonitions/#using-emoji-for-admonition-icons
 :tip-caption: 📎
 :note-caption: 📰
 :warning-caption: ⚠

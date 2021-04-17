@@ -1,8 +1,0 @@
-﻿:tip-caption: 📎
-:note-caption: 📰
-:warning-caption: ⚠
-:caution-caption: 🔥
-:important-caption: ‼
-
-// links
-:rider-testing: https://www.jetbrains.com/help/rider/Running_and_Debugging_Unity_Tests.html?keymap=primary_intellij_windows
