@@ -15,7 +15,7 @@
 > or, "Where do I put this crap?"
 
 .*TL;DR:* Decision-making process
-[caption=""]
+[NOTE]
 ====
 [qanda]
 Does this code import `Unity**Editor**`?::
@@ -28,13 +28,7 @@ Everything else::
 -> link:Code/Standalone/[]
 ====
 
-.References / Inspirations
-[sidebar]
---
-- https://forum.unity.com/threads/mature-project-folder-structure.654694/
-- https://docs.unity3d.com/Manual/cus-asmdef.html
-- https://docs.unity3d.com/Manual/cus-layout.html
---
+
 
 [WARNING]
 --
@@ -157,4 +151,57 @@ Each directory corresponds to one of the types of {rider-testing}[unit test runn
 
 Place anything you want to play around with in here.
 
-WARNING: This folder should *never* be checked in to the repository.
+For example:
+
+- Personal notes
+- Experimental code
+- Quick `[Test]` methods
+
+WARNING: This folder should *never* be checked in to the repository.{wj}footnote:[With the exception of link:Sketchbook/Sketchbook.adoc[] and link:Sketchbook/Sketchbook.adoc.meta[].]
+
+== Loading Assets at Runtime
+
+There are 3 main options:
+
+`Resources/` folder::
+- Relies on a "magically named" folder
+- Have to be built with the project every time
+- Everything is referenced by path, meaning that refactoring is a bit ugly (needing to change `string` paths and such)
+``AssetBundle``s::
+- Can be built _ahead of time_ (i.e. only need to be re-built when they themselves change)
+- Referenced by path (which means that paths need to be updated if the `AssetBundle` is moved)
+- Allows https://docs.unity3d.com/2021.1/Documentation/ScriptReference/AssetBundle.LoadFromFileAsync.html[asynchronous loading]
+https://docs.unity3d.com/Packages/com.unity.addressables@1.3/manual/AddressableAssetsOverview.html[`Addressables`]::
+- Quite a bit fancier
+- Allows https://docs.unity3d.com/Packages/com.unity.addressables@1.3/manual/AddressableAssetsAsyncOperationHandle.html[asynchronous loading]
+- Allows things to be referenced in a more abstract way, specifically `Address` (a unique identifier) and `Label` (an arbitrary tag)
+
+
+////
+TODO:
+Create Assets/{X}/Visuals
+Create Assets/{X}/Audio
+Create Assets/{X}/{Y}
+Create Assets/Prefabs
+Create Assets/Resources*
+
+*See if this is still necessary: https://docs.unity3d.com/2021.1/Documentation/Manual/LoadingResourcesatRuntime.html
+////
+
+== References
+
+.Project Structure
+[NOTE]
+--
+- https://forum.unity.com/threads/mature-project-folder-structure.654694/[Mature Project Folder structure]
+- https://docs.unity3d.com/Manual/cus-asmdef.html[Assembly definition and packages]
+- https://docs.unity3d.com/Manual/cus-layout.html[Package layout]
+--
+
+.Loading Assets
+[NOTE]
+--
+- https://www.reddit.com/r/Unity3D/comments/mnf3s8/addressables_vs_resource_folder/[r/unity3d: Addressables vs Resource Folder]
+- https://docs.unity3d.com/Packages/com.unity.addressables@1.3/manual/AddressableAssetsDevelopmentCycle.html[Addressable Assets Development Cycle]
+- https://docs.unity3d.com/2021.1/Documentation/Manual/LoadingResourcesatRuntime.html[Loading Resources at Runtime]
+--

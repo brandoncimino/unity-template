@@ -1,0 +1,6 @@
+= Brandon's Unity Template
+
+[WARNING,caption=🔥]
+====
+The full `README` is located at link:Assets/README.adoc[]!
+====
