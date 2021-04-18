@@ -1,8 +1,0 @@
-﻿//tag::blurb[]
-= Sketchbook
-
-Place anything you want to play around with in here.
-
-WARNING: This folder should *never* be checked in to the repository.
-
-//end::blurb[]
