@@ -140,3 +140,7 @@ fabric.properties
 Assets/Sketchbook/*
 !Assets/Sketchbook/Sketchbook.*
 !Assets/Sketchbook/Sketchbook.*.meta
+
+# This directory contains the automatically-downloaded butler files
+# (butler is itch.io's build automation tool: https://itch.io/docs/butler/)
+butler/
