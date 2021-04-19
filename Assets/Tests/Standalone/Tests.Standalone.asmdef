@@ -2,7 +2,9 @@
     "name": "Tests.Standalone",
     "rootNamespace": "",
     "references": [
-        "GUID:e78a5524f475ae4478fcd21cde244b67"
+      "GUID:e78a5524f475ae4478fcd21cde244b67",
+      "GUID:1169f6a8ec7e0e04696415220c6aafd5",
+      "GUID:3a527f3d42f1f5a40912424e6a3ee5fa"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

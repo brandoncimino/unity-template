@@ -6,9 +6,9 @@
       "source": "git",
       "dependencies": {
         "com.unity.nuget.newtonsoft-json": "2.0.0",
-        "com.unity.textmeshpro": "3.0.1"
+        "com.unity.textmeshpro": "3.0.5"
       },
-      "hash": "ea5738872c6dadbe8a8ddc0b3946981b64de0e59"
+      "hash": "ceef673795c57747aeb15f70765b853548e028e4"
     },
     "com.unity.collab-proxy": {
       "version": "1.3.9",
@@ -109,20 +109,6 @@
         "com.unity.modules.physics2d": "1.0.0"
       },
       "url": "https://packages.unity.com"
-    },
-    "jillejr.newtonsoft.json-for-unity": {
-      "version": "13.0.102",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity"
-    },
-    "jillejr.newtonsoft.json-for-unity.converters": {
-      "version": "1.1.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",

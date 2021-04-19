@@ -21,6 +21,7 @@ function Get-OS(){
     }
 }
 
+#tag::get-butler[]
 function Get-Butler() {
     #region Clean the butler dir
     Write-Host -ForegroundColor DarkGray "Cleaning $butler_dir"
@@ -63,3 +64,4 @@ function Get-Butler() {
 
     return $butler_exe
 }
+#end::get-butler[]

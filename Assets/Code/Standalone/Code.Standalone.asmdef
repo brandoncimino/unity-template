@@ -1,7 +1,9 @@
 {
     "name": "Code.Standalone",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:1169f6a8ec7e0e04696415220c6aafd5"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

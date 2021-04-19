@@ -1,13 +1,4 @@
 {
-  "scopedRegistries": [
-    {
-      "name": "Packages from jillejr",
-      "url": "https://npm.cloudsmith.io/jillejr/newtonsoft-json-for-unity/",
-      "scopes": [
-        "jillejr"
-      ]
-    }
-  ],
   "dependencies": {
     "com.fowlfever.brandonutils": "https://github.com/brandoncimino/brandon-utils.git?path=/Packages/BrandonUtils",
     "com.unity.collab-proxy": "1.3.9",

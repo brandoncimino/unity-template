@@ -10,6 +10,8 @@
 :sectnums:
 :toc:
 :rider-testing: https://www.jetbrains.com/help/rider/Running_and_Debugging_Unity_Tests.html
+:itch-io: https://itch.io[itch.io]
+:butler: https://itch.io/docs/butler/[butler]
 
 == Project Structure
 > or, "Where do I put this crap?"
@@ -187,6 +189,22 @@ Create Assets/Resources*
 
 *See if this is still necessary: https://docs.unity3d.com/2021.1/Documentation/Manual/LoadingResourcesatRuntime.html
 ////
+
+[#_itch-io]
+== {itch-io} workflow
+
+The build process consists of: ::
+
+. Building a `WebGL` version of the game.
+. `.zip`-ing the build.
+. Uploading the `.zip` file to {itch-io}.
+
+To-do's for the <<_itch-io>> (via link:../build.ps1[]): ::
+
+- [ ] Triggering unity's `WebGL` build
+- [ ] `.zip`-ing the build
+- [ ] Uploading the `.zip` file to {itch-io}
+** [x] Download {butler} ->  link:../build.ps1[].`Get-Butler`
 
 == References
 
