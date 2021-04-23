@@ -2,13 +2,15 @@
     "name": "Tests.Runtime",
     "rootNamespace": "",
     "references": [
-      "GUID:bcfe5347812438b419c670af6d28df9d",
-      "GUID:e78a5524f475ae4478fcd21cde244b67",
-      "GUID:e2ec7f5c6db56fe41b07b13f1531f007",
-      "GUID:1169f6a8ec7e0e04696415220c6aafd5",
-      "GUID:3a527f3d42f1f5a40912424e6a3ee5fa"
+        "GUID:bcfe5347812438b419c670af6d28df9d",
+        "GUID:e78a5524f475ae4478fcd21cde244b67",
+        "GUID:e2ec7f5c6db56fe41b07b13f1531f007",
+        "GUID:1169f6a8ec7e0e04696415220c6aafd5",
+        "GUID:3a527f3d42f1f5a40912424e6a3ee5fa"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,
