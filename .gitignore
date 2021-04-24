@@ -144,3 +144,10 @@ Assets/Sketchbook/*
 # This directory contains the automatically-downloaded butler files
 # (butler is itch.io's build automation tool: https://itch.io/docs/butler/)
 butler/
+
+# > ...parts of editor settings were in Library/EditorUserSettings.asset file (things like user's perforce connection settings etc.).
+# > So now it's in [{root}/UserSettings].
+# > The folder should not be put into version control, since it's per-user things there.
+# >
+# > -- https://forum.unity.com/threads/whats-the-usersettings-directory.754436/#post-5029937
+UserSettings/
