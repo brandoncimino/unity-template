@@ -4,3 +4,5 @@
 ====
 The full `README` is located at link:Assets/README.adoc[]!
 ====
+
+The Unity editor version required for this project can be found at link:ProjectSettings/ProjectVersion.txt[].
